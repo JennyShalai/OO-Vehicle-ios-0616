@@ -11,17 +11,17 @@
 @implementation FISCar
 
 - (instancetype)init {
-    return [self initWithWeight:1270 topSpeed:88];
+    return [self initWithISAutomatic:YES cylinders:4];
 }
 
-- (instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed {
-    self = [super initWithWeight:weight topSpeed:topSpeed];
-    if(self) {
-        _cylinders = 4;
-        _isAutomatic = YES;
-    }
-    return self;
-}
+//- (instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed {
+//    self = [super initWithWeight:weight topSpeed:topSpeed];
+//    if(self) {
+//        _cylinders = 4;
+//        _isAutomatic = YES;
+//    }
+//    return self;
+//}
 
 - (instancetype)initWithISAutomatic:(BOOL)isAutomatic cylinders:(NSUInteger)cylinders {
     self = [super initWithWeight:1270 topSpeed:88];

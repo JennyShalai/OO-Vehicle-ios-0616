@@ -15,7 +15,7 @@
 @property (nonatomic) NSUInteger cylinders;
 
 - (instancetype)init;
-- (instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed;
+//- (instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed;
 - (instancetype)initWithISAutomatic:(BOOL)isAutomatic cylinders:(NSUInteger)cylinders;
 
 @end

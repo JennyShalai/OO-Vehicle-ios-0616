@@ -33,10 +33,23 @@
     self.currentSpeed = 0;
 }
 - (void)turnLeft {
+    if(self.currentDirection == 0) {
+        self.currentDirection = 360;
+    }
     self.currentDirection -=90;
+    if(self.currentDirection >= 360) {
+        self.currentDirection -=360;
+    }
 }
 - (void)turnRight {
+    if(self.currentDirection == 360) {
+        self.currentDirection = 0;
+    }
     self.currentDirection +=90;
+    if(self.currentDirection >= 360) {
+        self.currentDirection -=360;
+    }
+
 }
 
 

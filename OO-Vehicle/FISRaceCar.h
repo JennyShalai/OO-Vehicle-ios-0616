@@ -13,7 +13,7 @@
 @property (strong, nonatomic) NSArray *sponsors;
 
 - (instancetype)init;
-- (instancetype)initWithSponsors;
-- (instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed;
+- (instancetype)initWithSponsors:(NSArray *)array;
+//- (instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed;
 
 @end

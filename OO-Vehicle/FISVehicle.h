@@ -15,13 +15,11 @@
 @property (nonatomic) CGFloat currentSpeed;
 @property (nonatomic) NSInteger currentDirection;
 
-
+- (instancetype)init;
+- (instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed;
 - (void)increaseSpeed;
 - (void)brake;
 - (void)turnLeft;
 - (void)turnRight;
-- (instancetype)init;
-- (instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed;
-
 
 @end
